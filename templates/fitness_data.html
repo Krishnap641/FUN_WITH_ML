@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Fitness data entry form</title>
+    <center><H2>Gender Prediction Model fitness data</H2></center>
+</head>
+<body>
+<form action = "{{url_for('predict_gender')}}" method="POST">
+ <p><b>Your Height :</b> <input type = "text" size=5 name="height" value={{height}} >
+    <b>Your Age :</b> <input type = "text" size=5 name="age" value={{age}} ></p>
+
+    <b></b><input type = "submit" value="Submit" />
+    <b><H2>Predicted gender of a person with height {{ht}} cms and age {{age}} years is {{gender}}</H2></b>
+</form>
+</body>
+</html>
